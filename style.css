@@ -1,0 +1,139 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #1b1b1b;
+}
+
+.dropdown-menu .dropdown-item {
+    color: rgb(255, 255, 255);
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #1b1b1b;
+    color: #2bff00;
+}
+
+#cabecalho .navbar-nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-link.active:hover {
+    color: #2bff00;
+}
+
+.white-link-text {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.white-link-text:hover,
+.white-link-text:focus {
+    text-decoration: underline;
+}
+
+.navbar-toggler {
+    background-color: #2bff00;
+}
+
+.section-title {
+    font-family: 'Press Start 2P', cursive;
+}
+
+#noticias-de-quadrinhos, 
+#noticias-de-anime,
+#noticias-de-filmes-series {
+    background-color:#00000017;
+}
+
+.news-link {
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+}
+
+.news-link:hover {
+    text-decoration: underline;
+}
+
+.col-md-4:hover .news-link {
+    color: #000000;
+}
+
+.news-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.carousel {
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    max-height: 800px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.news-destaque .card-img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+.news-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+#cabecalho .navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#cabecalho .navbar-nav .nav-link:hover,
+#cabecalho .navbar-nav .nav-link:focus {
+    color: #2bff00;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu {
+    background-color: #000000;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
+
+.news-destaque .news-link {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.322);
+    text-decoration: none;
+}
+
+.btn-enviar {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #00ff00;
+    color: #fff;
+}
+
+.mensagem-agradecimento {
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}

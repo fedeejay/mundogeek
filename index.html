@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Mundo Geek</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">
+                MUNDO GEEK
+            </h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="menu-navegacao">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#destaques" class="nav-link">
+                            <i class="bi bi-star-fill"></i>
+                            Destaques
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-chat-left-quote"></i>
+                            Comics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#noticias-de-quadrinhos" class="dropdown-item">
+                                    Notícias de Quadrinhos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#lista-de-quadrinhos" class="dropdown-item">
+                                    Listas de Quadrinhos
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-eye"></i>
+                            Animê
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#noticias-de-anime" class="dropdown-item">
+                                    Notícias de Animê
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#lista-de-anime" class="dropdown-item">
+                                    Listas de Animê
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-tv"></i>
+                            Filmes e Séries
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#noticias-de-filmes-series" class="dropdown-item">
+                                    Notícias de Filmes e Séries
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#listas-de-filmes-series" class="dropdown-item">
+                                    Listas de Filmes e Séries
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-envelope-fill"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="destaques">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="img/aranha-homem.jpg" alt="Homem Aranha" class="d-block w-100 img-fluid">
+                        <div class="carousel-caption">
+                            <div class="overlay"></div>
+                            <div class="caption-text text-center">
+                                <h2>A situação não está facil</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus repudiandae
+                                    voluptate autem.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/batma.jpg" alt="Batman" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <div class="overlay"></div>
+                            <div class="caption-text">
+                                <h2>Batman em plena luz do dia!</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus repudiandae
+                                    voluptate autem.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/mario_loco.jpg" alt="Mario Bros" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <div class="overlay"></div>
+                            <div class="caption-text">
+                                <h2>Mario é flagrado muito louco na balada!</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus repudiandae
+                                    voluptate autem.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-0 pb-0">
+            <div class="container pt-3 pb-3">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card border-0 news-card">
+                            <div class="news-destaque">
+                                <img src="./img/iron-man-and-arnold-schwarzenegger-over-avengers-infinity-war-poster.avif"
+                                    class="card-img-top d-block w-100 rounded mb-2" alt="iron">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                    <h4 class="card-title text-white">
+                                        <span class="bg-danger d-inline-block">
+                                            FILMES
+                                        </span>
+                                    </h4>
+                                    <p class="card-text text-bold text-white news-title">
+                                        <a href="link-da-noticia" class="news-link">
+                                            <span class="white-link-text">Arnold Schwarzenegger tem um requisito simples
+                                                para ingressar no MCU</span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 news-card">
+                            <div class="news-destaque">
+                                <img src="./img/yamatoop.avif" class="card-img-top d-block w-100 rounded mb-2"
+                                    alt="One Piece">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                    <h4 class="card-title text-bold text-white">
+                                        <span class="bg-danger d-inline-block">
+                                            ANIME
+                                        </span>
+                                    </h4>
+                                    <p class="card-text text-bold text-white news-title">
+                                        <a href="link-da-noticia" class="news-link">
+                                            <span class="white-link-text">Fãs de One Piece se dividem sobre Yamato ser
+                                                uma menina</span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 news-card">
+                            <div class="news-destaque">
+                                <img src="./img/hedge-knight.avif" class="card-img-top d-block w-100 rounded mb-2"
+                                    alt="Episodios">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                    <h4 class="card-title text-white">
+                                        <span class="bg-danger d-inline-block">
+                                            SÉRIES
+                                        </span>
+                                    </h4>
+                                    <p class="card-text text-white news-title">
+                                        <a href="link-da-noticia" class="news-link">
+                                            <span class="white-link-text">Game of Thrones, The Hedge Knight, planejado
+                                                para três temporadas</span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="noticias-de-quadrinhos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center border-bottom border-2 border-black"><span
+                            class="text-colored text-bold">Comics</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <h6 class="section-title">Notícias de Quadrinhos</h6>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/new.avif" alt="" class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">HOMEM ARANHA</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link">EXCLUSIVO: Miles Morales e Homem de
+                                        Ferro dão uma atualização apocalíptica à Carnificina</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">Cletus revela como Miles Morales acidentalmente deu ao seu
+                                    Extrembiote, que é feito parcialmente da tecnologia do Homem de Ferro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/new2.avif" alt="" class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">X-MEN</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link">Marvel está realizando uma gala Hellfire
+                                        da vida real no SDCC</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">O Hellfire Gala anual de Krakoa está ganhando vida na San Diego
+                                    Comic-Con 2023 graças à Marvel e ao The Official Disney Fan Club.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/new3.avif" alt="" class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">GOOD OMENS</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link"> Good Omens finalmente chega aos
+                                        quadrinhos por meio da colaboradora frequente de Gaiman, Colleen Doran</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">O romance Good Omens de Neil Gaiman e Terry Pratchett, publicado em
+                                    1990, está recebendo uma adaptação em graphic novel, cortesia de Colleen Doran.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="lista-de-quadrinhos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <h6 class="section-title">Lista de Quadrinhos</h6>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/lista.avif" alt="" class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">DC COMICS</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link">10 melhores quadrinhos da DC escritos
+                                        por mulheres</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">A DC publica os melhores quadrinhos escritos por autoras femininas,
+                                    desde a Mulher Maravilha de Gail Simone até a Detective Comics de Mariko Tamaki.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/lista1.avif" alt="" class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">HOMEM ARANHA</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link">10 melhores mistérios em quadrinhos do
+                                        Homem-Aranha</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">Os mistérios dos quadrinhos envolvendo Duende Verde, Kraven e fãs e
+                                    personagens mais problemáticos do Homem-Aranha por anos, mas foram recompensados
+                                    ​​​​em grandes quadrinhos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/lista2.avif" alt="" class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">DC COMICS</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link"> 10 reviravoltas mais sombrias da DC
+                                        Comics</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">A DC Comics choca os leitores com as melhores e mais sombrias
+                                    reviravoltas, apresentando mortes e reviravoltas narrativas inesperadas envolvendo
+                                    Superman, Coringa e muito mais.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="noticias-de-anime" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center border-bottom border-2 border-black"><span
+                            class="text-colored text-bold">ANIME</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <h6 class="section-title">Notícias de Animês</h6>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/Yamamoto-is-killed-in-bleach-.avif" alt=""
+                                class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">BLEACH</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link">Yamamoto de Bleach vence a competição de
+                                        homem mais poderoso</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">Yamamoto de Bleach vence personagens de franquias como One Piece,
+                                    Hunter x Hunter e mais para ser proclamado o velho mais durão do anime.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/the-going-merry-in-live-action-one-piece-series.avif" alt=""
+                                class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">ONE PIECE (LIVE ACTION)</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link">O pôster live-action de One Piece mostra
+                                        uma alegria de cair o queixo</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">A série live-action de One Piece oferece aos fãs uma visão mais
+                                    detalhada do Going Merry em um novo pôster para a próxima adaptação da Netflix.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/gojo2.avif" alt="" class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">JUJUTSU KAISEN</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link">Satoru Gojo de Jujutsu Kaisen manipula
+                                        seu caminho para a realidade em cosplay perfeito</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">Um talentoso fã de Jujutsu Kaisen fabrica um cosplay de Satoru Gojo
+                                    que é assustadoramente preciso, recriando perfeitamente os intensos olhos azuis do
+                                    personagem..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="lista-de-anime" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <h6 class="section-title">Lista de Animês</h6>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/untitled-presentation.avif" alt=""
+                                class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">ANIMES</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link">10 habilidades de anime mais
+                                        subestimadas, classificadas</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">O anime tem muitas habilidades que merecem mais hype, como a
+                                    habilidade do War Hammer Titan de criar armas em AoT e a peculiaridade da fita de
+                                    Hanta Sero em MHA.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/super_saiyan_goten_crying_zamasu_and_vegetto_in_the_middle-1.avif" alt=""
+                                class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">DRAGON BALL</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link">10 piores decisões de escrita em Dragon
+                                        Ball</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">Dragon Ball tomou muitas decisões ruins de escrita, desde o poder
+                                    sem fim até seu foco singular em Goku.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/collage-maker-27-may-2023-02-14-am-2100.avif" alt=""
+                                class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">ONE PIECE</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link">Idade de cada personagem principal de
+                                        One Piece</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">One Piece apresenta muitos personagens-chave competindo pelo
+                                    tesouro titular, e esses indivíduos variam muito em idade.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="noticias-de-filmes-series" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center border-bottom border-2 border-black"><span
+                            class="text-colored text-bold">Filmes e Séries</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <h6 class="section-title">Notícias de Filmes e Séries</h6>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/will-poulter-as-adam-warlock-in-guardians-of-the-galaxy-vol-3.avif" alt=""
+                                class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">GUARDIÕES DA GALÁXIA VOL. 3 (2023)</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link">O design de Adam Warlock do GOTG 3 funde
+                                        quadrinhos clássicos com o soberano do MCU</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">O artista conceitual da Marvel Studios, Constantine Sekeris, revela
+                                    as várias inspirações para o visual de Adam Warlock em Guardiões da Galáxia Vol. 3.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/untitled_design_11.avif" alt=""
+                                class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">A PEQUENA SEREIA</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link">Como a Pequena Sereia criou a cauda
+                                        realista de Ariel</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">A barbatana que Halle Bailey usa como Ariel no sucesso de
+                                    bilheteria da Disney A Pequena Sereia foi cuidadosamente projetada para transições
+                                    CGI perfeitas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/deadpool-colossus.avif" alt=""
+                                class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">DEADPOOL 3 (2024)</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link">RELATÓRIO: Ryan Reynolds impedido de
+                                        improvisar em Deadpool 3</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">Deadpool 3 da Marvel Studios começa a ser filmado, mas com um
+                                    obstáculo potencial devido às greves da WGA: o ator Ryan Reynolds não tem permissão
+                                    para improvisar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="listas-de-filmes-series" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <h6 class="section-title">Lista de Filmes e Séries</h6>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/Wakandan-Soldiers-And-Thanos-In-MCU.avif" alt=""
+                                class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">DISNEY</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link">15 coisas de Infinity War e Endgame que
+                                        irritaram até os fãs dedicados do MCU</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">Apesar de serem sucessos de bilheteria, Avengers: Infinity War e
+                                    Endgame tomaram várias decisões narrativas que não agradaram aos fãs do MCU.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/oooooh.avif" alt="" class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">FILMES</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link">15 comédias não intencionais mais
+                                        engraçadas da história do cinema</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">Os filmes mais engraçados também são alguns dos piores. O cinema
+                                    seria um meio mais triste sem autores como Tommy Wiseau e Neil Breen.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-border-0">
+                            <img src="img/the-best-ever-seasons-of-the-simpsons.avif" alt=""
+                                class="card-img-top d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <p class="card-text">OS SIMPSONS</p>
+                                <h4 class="card-title news-title">
+                                    <a href="link-da-noticia" class="news-link">10 melhores temporadas dos Simpsons,
+                                        classificadas</a>
+                                </h4>
+                                <p></p>
+                                <p class="card-text">Cada uma das 34 temporadas de Os Simpsons é incrivelmente
+                                    divertida, mas há algumas que devem ser recomendadas a qualquer espectador em
+                                    potencial.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2 class="section-title text-center border-bottom border-2 border-black">Fale conosco</h2>
+                        <form class="form-container mt-4" id="opiniaoForm">
+                            <div class="mb-3">
+                                <label for="nome-completo"><strong>Nome completo:</strong></label>
+                                <input type="text" id="nome-completo" name="nome-completo" class="input-form" required
+                                    autocomplete="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email"><strong>E-mail:</strong></label>
+                                <input type="email" id="email" name="email" class="input-form" required
+                                    autocomplete="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone"><strong>Telefone:</strong></label>
+                                <input type="tel" id="telefone" name="telefone" class="input-form" required
+                                    autocomplete="tel" pattern="(\(\d{2}\)\s?)?\d{4,5}-\d{4}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="opiniao" class="form-label"><strong>Sugestões, críticas ou
+                                        elogios:</strong></label>
+                                <textarea class="form-control" id="opiniao" rows="5" placeholder="Digite sua mensagem"
+                                    style="resize: none;"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-enviar">Enviar</button>
+                        </form>
+                        <div id="mensagem-agradecimento" class="mensagem-agradecimento"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer bg-dark text-light pt-5 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>Informações de Contato</h5>
+                        <p>Endereço: Av. Exemplo, 123</p>
+                        <p>Telefone: (00) 1234-5678</p>
+                        <p>Email: info@mundogeek.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Links Úteis</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Sobre nós</a></li>
+                            <li><a href="#">Termos de Serviço</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Redes Sociais</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                            <li><a href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3">
+                &copy; 2023 Mundo Geek. Todos os direitos reservados.
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Após o envio do formulário
+            $('#opiniaoForm').submit(function (e) {
+                e.preventDefault();
+                $('#mensagem-agradecimento').text('Muito obrigado pelo seu feedback! Sua opinião é muito importante para nós.');
+
+                $('#nome-completo').val('');
+                $('#email').val('');
+                $('#telefone').val('');
+                $('#opiniao').val('');
+
+                setTimeout(function () {
+                    $('#mensagem-agradecimento').text('');
+                }, 6000);
+            });
+        });
+    </script>
+</body>
+
+</html>
